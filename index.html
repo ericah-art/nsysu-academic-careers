@@ -165,6 +165,7 @@
     .role-group + .role-group { margin-top: 56px; }
     .role-title { display: flex; align-items: center; gap: 13px; margin: 0 0 20px; color: var(--navy); font-size: 1.25rem; }
     .role-title::before { content: ""; width: 11px; height: 11px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 6px var(--teal-soft); }
+    .role-hint { color: var(--muted); font-size: .9rem; font-weight: 500; }
     .jobs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
     details.job {
       align-self: start;
@@ -225,6 +226,7 @@
     .contact strong { display: block; font-size: 1.05rem; }
     .contact span { display: block; margin-top: 4px; color: rgba(255,255,255,.68); font-size: .88rem; }
     .contact .button { width: 100%; margin-top: 20px; }
+    .contact .button + .button { margin-top: 10px; }
 
     footer { padding: 28px 0 40px; color: var(--muted); font-size: .86rem; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding-top: 24px; }
@@ -324,9 +326,9 @@
         </div>
 
         <div class="role-group">
-          <h3 class="role-title">Full-time faculty</h3>
+          <h3 class="role-title">Full-time faculty <span class="role-hint">Select an area to view details.</span></h3>
           <div class="jobs">
-            <details class="job" open>
+            <details class="job">
               <summary><span><span class="job-name">College of Science</span><span class="job-meta">Biology · Physics · Mathematics · Chemistry</span></span></summary>
               <div class="job-body"><h4>Priority fields</h4><ul><li>Biological sciences and related fields</li><li>Condensed matter physics, quantum materials, and quantum technology—theory and experiment</li><li>All fields of mathematics</li><li>All fields of chemistry, especially organic and analytical chemistry</li></ul><h4>Qualifications</h4><ul><li><strong>Biology:</strong> Ph.D. with at least two years of postdoctoral research experience.</li><li><strong>Physics:</strong> Ph.D. in Physics or a related field and postdoctoral experience. Ability to teach in English is preferred.</li><li><strong>Mathematics:</strong> Effective communication with students and the ability to mentor and guide academic research.</li><li><strong>Chemistry:</strong> Ph.D. in Chemistry or a related field. At least one year of postdoctoral experience is preferred. Fluency in English and the ability to lecture in English are required.</li></ul><a class="apply-small" href="#apply">How to apply →</a></div>
             </details>
@@ -394,13 +396,14 @@
         <div>
           <p class="eyebrow">How to apply</p>
           <h2 id="apply-title">Start the conversation.</h2>
-          <p>Email your résumé or CV and indicate the position, college, and field that best match your expertise.</p>
+          <p>Download and complete the application form, then email it with your résumé or CV. Please indicate the position, college, and field that best match your expertise.</p>
         </div>
         <div class="contact">
           <strong>Erica HSUEH</strong>
           <span>Administrative Officer</span>
           <span>Global Academic Collaboration Center</span>
           <span>Office of Research and Development</span>
+          <a class="button button-download" href="assets/Application-Form-for-Faculty-Position.docx" download="Application Form for Faculty Position.docx">Download application form ↓</a>
           <a class="button button-primary" href="mailto:erica@g-mail.nsysu.edu.tw?subject=NSYSU%20Faculty%20or%20Researcher%20Application">Email your application ↗</a>
         </div>
       </div>
